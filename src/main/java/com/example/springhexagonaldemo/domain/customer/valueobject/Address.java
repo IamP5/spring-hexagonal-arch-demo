@@ -4,11 +4,11 @@ import lombok.Getter;
 
 @Getter
 public class Address {
-    private String street;
-    private Integer number;
-    private String city;
-    private String state;
-    private String zipCode;
+    private final String street;
+    private final Integer number;
+    private final String city;
+    private final String state;
+    private final String zipCode;
 
 
     public Address(String street, Integer number, String city, String state, String zipCode) {
