@@ -3,6 +3,7 @@ package com.example.springhexagonaldemo.domain.customer.model;
 import com.example.springhexagonaldemo.domain.customer.port.CustomerPort;
 import com.example.springhexagonaldemo.domain.customer.valueobject.Address;
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,6 +11,7 @@ import java.math.BigDecimal;
 import java.util.UUID;
 
 @Getter
+@AllArgsConstructor
 public class CustomerModel implements CustomerPort {
     @Setter(AccessLevel.NONE)
     private UUID id;
