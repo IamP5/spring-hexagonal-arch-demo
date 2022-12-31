@@ -13,12 +13,12 @@ public interface CustomerPort {
     Boolean isActive();
     BigDecimal getRewardPoints();
 
-    void changeName(String name);
-    void changeEmail(String email);
+    void changeName(String name) throws IllegalArgumentException;
+    void changeEmail(String email) throws IllegalArgumentException;
     void changeAddress(Address address);
-    void activate();
+    void activate() throws IllegalArgumentException;
     void deactivate();
-    void incrementRewardPoints(BigDecimal rewardPoints);
-    void decrementRewardPoints(BigDecimal rewardPoints);
-    void validate();
+    void incrementRewardPoints(BigDecimal rewardPoints) throws IllegalArgumentException;
+    void decrementRewardPoints(BigDecimal rewardPoints) throws IllegalArgumentException;
+    void validate() throws IllegalArgumentException;
 }
