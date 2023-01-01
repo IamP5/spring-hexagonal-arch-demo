@@ -14,7 +14,7 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
-public class CustomerJpaAdapter  implements CustomerPersistencePort {
+public class CustomerJpaAdapter implements CustomerPersistencePort {
 
     private final CustomerRepository customerRepository;
 
